@@ -8,13 +8,15 @@ class RoutingBar extends ConsumerWidget {
 
   final bool _useIcons;
 
-  static List<RoutingDestination> routingDestinations = [
+  static const List<RoutingDestination> routingDestinations = [
     RoutingDestination("Home", "/"),
+    RoutingDestination("Gaming", "/gaming"),
   ];
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Row(
+      mainAxisAlignment: .center,
       children: List.generate(
         routingDestinations.length,
         (i) => RouteSelectWidget(routingDestinations[i], _useIcons),
