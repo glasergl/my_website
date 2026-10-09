@@ -4,22 +4,21 @@ import 'package:my_website/page_routing/route_select_widget.dart';
 import 'package:my_website/page_routing/routing_destination.dart';
 
 class RoutingBar extends ConsumerWidget {
-  const RoutingBar({super.key, this._useIcons = false});
-
-  final bool _useIcons;
+  const RoutingBar({super.key});
 
   static const List<RoutingDestination> routingDestinations = [
-    RoutingDestination("Home", "/"),
-    RoutingDestination("Gaming", "/gaming"),
+    RoutingDestination("Home", Icon(Icons.home), "/"),
+    RoutingDestination("Gaming", Icon(Icons.sports_esports), "/gaming"),
   ];
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Row(
       mainAxisAlignment: .center,
+      spacing: 10.0,
       children: List.generate(
         routingDestinations.length,
-        (i) => RouteSelectWidget(routingDestinations[i], _useIcons),
+        (i) => RouteSelectWidget(routingDestinations[i]),
       ),
     );
   }

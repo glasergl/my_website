@@ -4,21 +4,20 @@ import 'package:go_router/go_router.dart';
 import 'package:my_website/page_routing/routing_destination.dart';
 
 class RouteSelectWidget extends ConsumerWidget {
-  const RouteSelectWidget(this.routingDestination, this._useIcons, {super.key});
-  final bool _useIcons;
+  const RouteSelectWidget(this.routingDestination, {super.key});
   final RoutingDestination routingDestination;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return _useIcons
-        ? TextButton.icon(
-            onPressed: () => context.go(routingDestination.destinationName),
-            label: Text(routingDestination.destinationName),
-            icon: Icon(Icons.home),
-          )
-        : TextButton(
-            onPressed: () => context.go(routingDestination.goRoute),
-            child: Text(routingDestination.destinationName),
-          );
+    return ElevatedButton(
+      onPressed: () => context.go(routingDestination.goRoute),
+      child: Row(
+        spacing: 3.0,
+        children: [
+          routingDestination.icon,
+          Text(routingDestination.destinationName),
+        ],
+      ),
+    );
   }
 }

@@ -6,8 +6,6 @@ class HomePage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Center(
-      child: Column(children: [Text("Home"), Text("Gabriel Glaser")]),
-    );
+    return Text("Home");
   }
 }

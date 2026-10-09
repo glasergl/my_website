@@ -6,6 +6,6 @@ class GamingPage extends ConsumerWidget {
 
   @override
   Widget build(Object context, WidgetRef ref) {
-    return Center(child: Text("Gaming"));
+    return Text("Gaming");
   }
 }
