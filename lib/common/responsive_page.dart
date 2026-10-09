@@ -8,7 +8,7 @@ class ResponsivePage extends ConsumerWidget {
     required this.portrait,
   });
 
-  static const double widthBreakPoint = 600.0;
+  static const double widthBreakPoint = 900.0;
 
   final Widget Function(BuildContext context, WidgetRef ref) landscape;
   final Widget Function(BuildContext context, WidgetRef ref) portrait;
@@ -17,8 +17,8 @@ class ResponsivePage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return LayoutBuilder(
       builder: (context, constraints) => constraints.maxWidth < widthBreakPoint
-          ? landscape(context, ref)
-          : portrait(context, ref),
+          ? portrait(context, ref)
+          : landscape(context, ref),
     );
   }
 }

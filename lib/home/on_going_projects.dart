@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:my_website/common/responsive_page.dart';
+import 'package:my_website/home/project.dart';
+
+class OnGoingProjects extends ConsumerWidget {
+  const OnGoingProjects({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final projects = <Project>[
+      Project(
+        "Custom LoL Setup",
+        "Setup-Tool für League of Legends mit Custom-Konfigurationen. Ermöglicht schnelle und einfache Champion-Verwaltung.",
+      ),
+      Project(
+        "JLaTeX",
+        "Java-basierte LaTeX-Bibliothek für die programmatische Generierung von LaTeX-Dokumenten. Vereinfacht die automatisierte Generierung von PDFs mit dynamischen Daten.",
+      ),
+      Project(
+        "Task Scheduler",
+        "Effiziente Task-Scheduling-Anwendung. Eine bessere Alternative zur veralteten Windows Aufgabenplanung.",
+      ),
+    ];
+
+    return LayoutBuilder(
+      builder: (context, constraints) => constraints.maxWidth < 900.0
+          ? Column(spacing: 25.0, children: projects)
+          : Row(
+              mainAxisAlignment: .center,
+              crossAxisAlignment: .start,
+              spacing: 25.0,
+              children: projects,
+            ),
+    );
+  }
+}
