@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:my_website/home/git_hub_link.dart';
 import 'package:my_website/home/project.dart';
 
 class OnGoingProjects extends ConsumerWidget {
@@ -11,14 +12,17 @@ class OnGoingProjects extends ConsumerWidget {
       Project(
         "Custom LoL Setup",
         "Setup-Tool für League of Legends mit Custom-Konfigurationen. Ermöglicht schnelle und einfache Champion-Verwaltung.",
+        child: GitHubLink("https://github.com/glasergl/custom-lol-setup"),
       ),
       Project(
         "JLaTeX",
         "Java-basierte LaTeX-Bibliothek für die programmatische Generierung von LaTeX-Dokumenten. Vereinfacht die automatisierte Generierung von PDFs mit dynamischen Daten.",
+        child: GitHubLink("https://github.com/glasergl/jlatex"),
       ),
       Project(
         "Task Scheduler",
         "Effiziente Task-Scheduling-Anwendung. Eine bessere Alternative zur veralteten Windows Aufgabenplanung.",
+        child: GitHubLink("https://github.com/glasergl/task-scheduler"),
       ),
     ];
 
