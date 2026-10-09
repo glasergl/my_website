@@ -14,7 +14,7 @@ class Project extends ConsumerWidget {
       spacing: 4.0,
       children: [
         Text(title, style: Theme.of(context).textTheme.bodyLarge),
-        SizedBox(width: 200.0, child: Text(description)),
+        SizedBox(width: 200.0, child: Text(description, textAlign: .center)),
         child ?? Container(),
       ],
     );

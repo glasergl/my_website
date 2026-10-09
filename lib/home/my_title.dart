@@ -6,20 +6,14 @@ class MyTitle extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Card(
-      elevation: 3.0,
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          children: [
-            Text(
-              "Gabriel Glaser",
-              style: Theme.of(context).textTheme.headlineLarge,
-            ),
-            Text("MSc. Informatik Student an der Universität Stuttgart"),
-          ],
+    return Column(
+      children: [
+        Text(
+          "Gabriel Glaser",
+          style: Theme.of(context).textTheme.headlineLarge,
         ),
-      ),
+        Text("MSc. Informatik Student an der Universität Stuttgart"),
+      ],
     );
   }
 }
