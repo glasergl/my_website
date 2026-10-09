@@ -14,12 +14,12 @@ class ShellPage extends ConsumerWidget {
     return ResponsivePage(
       landscape: (context, ref) => Scaffold(
         appBar: AppBar(title: Logo()),
-        body: child,
-        bottomNavigationBar: BottomAppBar(child: RoutingBar()),
+        body: Column(children: [RoutingBar(), child]),
       ),
       portrait: (context, ref) => Scaffold(
         appBar: AppBar(title: Logo()),
-        body: Column(children: [RoutingBar(), child]),
+        body: child,
+        bottomNavigationBar: BottomAppBar(child: RoutingBar()),
       ),
     );
   }
