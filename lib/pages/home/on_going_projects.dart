@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_website/home/git_hub_link.dart';
-import 'package:my_website/home/project.dart';
+import 'package:my_website/pages/home/git_hub_link.dart';
+import 'package:my_website/pages/home/project.dart';
 
 class OnGoingProjects extends ConsumerWidget {
   const OnGoingProjects({super.key});

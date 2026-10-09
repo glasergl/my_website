@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:my_website/gaming/gaming_page.dart';
-import 'package:my_website/home/home_page.dart';
+import 'package:my_website/pages/gaming/gaming_page.dart';
+import 'package:my_website/pages/home/home_page.dart';
 import 'package:my_website/page_routing/shell_page.dart';
 
 class MyWebsiteApp extends ConsumerWidget {
