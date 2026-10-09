@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_website/common/responsive_page.dart';
 import 'package:my_website/home/project.dart';
 
 class OnGoingProjects extends ConsumerWidget {
