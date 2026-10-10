@@ -8,7 +8,7 @@ class RoutingBar extends ConsumerWidget {
 
   static const List<RoutingDestination> routingDestinations = [
     RoutingDestination("Home", Icon(Icons.home), "/"),
-    RoutingDestination("Gaming", Icon(Icons.sports_esports), "/gaming"),
+    RoutingDestination("Zocken", Icon(Icons.sports_esports), "/gaming"),
   ];
 
   @override
