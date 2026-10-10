@@ -9,15 +9,10 @@ class RouteSelectWidget extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return ElevatedButton(
+    return TextButton.icon(
       onPressed: () => context.go(routingDestination.goRoute),
-      child: Row(
-        spacing: 3.0,
-        children: [
-          routingDestination.icon,
-          Text(routingDestination.destinationName),
-        ],
-      ),
+      icon: routingDestination.icon,
+      label: Text(routingDestination.destinationName),
     );
   }
 }
