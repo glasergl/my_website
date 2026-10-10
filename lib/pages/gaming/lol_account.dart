@@ -14,7 +14,7 @@ class LolAccount extends ConsumerWidget {
       onPressed: () async {
         await launchUrl(Uri.parse(url));
       },
-      child: Text(summonerName, style: Theme.of(context).textTheme.bodyLarge),
+      child: Text(summonerName),
     );
   }
 }

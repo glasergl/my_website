@@ -15,7 +15,7 @@ class GitHubLink extends ConsumerWidget {
         await launchUrl(Uri.parse(url));
       },
       icon: const FaIcon(FontAwesomeIcons.github),
-      label: const Text('Source Code'),
+      label: const Text('Code'),
     );
   }
 }
