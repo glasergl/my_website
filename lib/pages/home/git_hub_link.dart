@@ -11,9 +11,7 @@ class GitHubLink extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return TextButton.icon(
-      onPressed: () async {
-        await launchUrl(Uri.parse(url));
-      },
+      onPressed: () async => await launchUrl(Uri.parse(url)),
       icon: const FaIcon(FontAwesomeIcons.github),
       label: const Text('Code'),
     );

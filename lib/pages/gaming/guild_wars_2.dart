@@ -15,7 +15,7 @@ class GuildWars2 extends ConsumerWidget {
         ),
         ClipRRect(
           borderRadius: BorderRadius.circular(12),
-          child: Image.asset('assets/images/karl_the_rock.png'),
+          child: Image.asset('assets/images/karl_the_rock.png', width: 500.0),
         ),
       ],
     );

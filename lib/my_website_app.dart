@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:my_website/pages/gaming/gaming_page.dart';
 import 'package:my_website/pages/home/home_page.dart';
 import 'package:my_website/page_routing/shell_page.dart';
+import 'package:my_website/pages/socials/socials_page.dart';
 
 class MyWebsiteApp extends ConsumerWidget {
   static final GoRouter _router = GoRouter(
@@ -18,6 +19,10 @@ class MyWebsiteApp extends ConsumerWidget {
               GoRoute(
                 path: 'gaming',
                 builder: (context, state) => GamingPage(),
+              ),
+              GoRoute(
+                path: 'socials',
+                builder: (context, state) => SocialsPage(),
               ),
             ],
           ),
