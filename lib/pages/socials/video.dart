@@ -12,7 +12,7 @@ class Video extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Column(
       children: [
-        Text(title),
+        Text(title, style: Theme.of(context).textTheme.bodyLarge),
         Padding(
           padding: const EdgeInsets.all(20.0),
           child: GestureDetector(
