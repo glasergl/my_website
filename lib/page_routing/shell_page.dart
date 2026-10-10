@@ -13,7 +13,7 @@ class ShellPage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return ResponsivePage(
       landscape: (context, ref) => Scaffold(
-        appBar: AppBar(title: Logo()),
+        appBar: AppBar(title: Logo(), surfaceTintColor: Colors.transparent),
         body: Column(
           spacing: 10.0,
           children: [
