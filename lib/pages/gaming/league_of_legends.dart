@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:my_website/pages/gaming/lol_account.dart';
-import 'package:my_website/pages/gaming/lol_elo.dart';
 import 'package:my_website/pages/gaming/lol_elos.dart';
 
 class LeagueOfLegends extends ConsumerWidget {
