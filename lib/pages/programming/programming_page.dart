@@ -7,8 +7,6 @@ class ProgrammingPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return SingleChildScrollView(
-      child: OnGoingProjects(),
-    );
+    return SingleChildScrollView(child: OnGoingProjects());
   }
 }

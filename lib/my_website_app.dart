@@ -21,7 +21,8 @@ class MyWebsiteApp extends ConsumerWidget {
               GoRoute(
                 path: 'programming',
                 builder: (context, state) => ProgrammingPage(),
-              ),GoRoute(
+              ),
+              GoRoute(
                 path: 'gaming',
                 builder: (context, state) => GamingPage(),
               ),

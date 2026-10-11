@@ -7,8 +7,6 @@ class HomePage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return SingleChildScrollView(
-      child: MyTitle(),
-    );
+    return SingleChildScrollView(child: MyTitle());
   }
 }
