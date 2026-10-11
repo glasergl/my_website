@@ -18,6 +18,17 @@ class RouteSelectWidget extends ConsumerWidget {
         onPressed: () => context.go(routingDestination.goRoute),
         icon: routingDestination.icon,
         label: Text(routingDestination.destinationName),
+        style: ButtonStyle(
+          overlayColor: WidgetStateProperty.resolveWith<Color>((states) {
+            if (states.contains(WidgetState.hovered) && selected) {
+              return Colors.transparent;
+            } else if (states.contains(WidgetState.hovered)) {
+              return Theme.of(context).hoverColor;
+            } else {
+              return Colors.transparent;
+            }
+          }),
+        ),
       ),
     );
   }
