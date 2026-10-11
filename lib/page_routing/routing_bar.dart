@@ -8,7 +8,8 @@ class RoutingBar extends ConsumerWidget {
   const RoutingBar({super.key});
 
   static const List<RoutingDestination> routingDestinations = [
-    RoutingDestination("Home", Icon(Icons.home), "/"),
+    RoutingDestination("Startseite", Icon(Icons.home), "/"),
+    RoutingDestination("Programmieren", Icon(Icons.code), "/programming"),
     RoutingDestination("Zocken", Icon(Icons.sports_esports), "/gaming"),
     RoutingDestination(
       "Soziales",
