@@ -15,7 +15,11 @@ class ShellPage extends ConsumerWidget {
     final size = MediaQuery.sizeOf(context);
     return ResponsivePage(
       landscape: (context, ref) => Scaffold(
-        appBar: AppBar(title: Logo(), surfaceTintColor: Colors.transparent, actions: [DarkModeSwitch()],),
+        appBar: AppBar(
+          title: Logo(),
+          surfaceTintColor: Colors.transparent,
+          actions: [DarkModeSwitch()],
+        ),
         body: Column(
           spacing: 10.0,
           children: [
@@ -26,7 +30,7 @@ class ShellPage extends ConsumerWidget {
         ),
       ),
       portrait: (context, ref) => Scaffold(
-        appBar: AppBar(title: Logo(), actions: [DarkModeSwitch()],),
+        appBar: AppBar(title: Logo(), actions: [DarkModeSwitch()]),
         body: child,
         bottomNavigationBar: BottomAppBar(child: RoutingBar()),
       ),
