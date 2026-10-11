@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_website/common/logo.dart';
+import 'package:my_website/pages/logo.dart';
 import 'package:my_website/common/responsive_page.dart';
-import 'package:my_website/page_routing/dark_mode_switch.dart';
+import 'package:my_website/pages/dark_mode_switch.dart';
 import 'package:my_website/page_routing/routing_bar.dart';
 
 class ShellPage extends ConsumerWidget {

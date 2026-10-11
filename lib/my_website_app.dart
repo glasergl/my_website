@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:my_website/page_routing/dark_mode_switch.dart';
+import 'package:my_website/pages/dark_mode_switch.dart';
 import 'package:my_website/pages/gaming/gaming_page.dart';
 import 'package:my_website/pages/home/home_page.dart';
-import 'package:my_website/page_routing/shell_page.dart';
+import 'package:my_website/pages/shell_page.dart';
 import 'package:my_website/pages/programming/programming_page.dart';
 import 'package:my_website/pages/socials/socials_page.dart';
 
