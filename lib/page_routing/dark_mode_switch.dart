@@ -10,12 +10,12 @@ class DarkModeSwitch extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final d = ref.watch(useDarkModeProvider);
-    return Row(children: [Icon(Icons.dark_mode), Switch(
+    return Row(children: [Icon(Icons.light_mode), Switch(
       value: d,
       onChanged: (value) {
         _useDarkMode = value;
         ref.invalidate(useDarkModeProvider);
       },
-    ), Icon(Icons.light_mode)]);
+    ), Icon(Icons.dark_mode)]);
   }
 }
