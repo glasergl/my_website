@@ -11,6 +11,7 @@ class ShellPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final size = MediaQuery.sizeOf(context);
     return ResponsivePage(
       landscape: (context, ref) => Scaffold(
         appBar: AppBar(title: Logo(), surfaceTintColor: Colors.transparent),
@@ -18,7 +19,7 @@ class ShellPage extends ConsumerWidget {
           spacing: 10.0,
           children: [
             RoutingBar(),
-            const Divider(),
+            SizedBox(width: 0.6 * size.width, child: const Divider()),
             Expanded(child: child),
           ],
         ),
