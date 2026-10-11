@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:my_website/common/logo.dart';
 import 'package:my_website/common/responsive_page.dart';
+import 'package:my_website/page_routing/dark_mode_switch.dart';
 import 'package:my_website/page_routing/routing_bar.dart';
 
 class ShellPage extends ConsumerWidget {
@@ -14,7 +15,7 @@ class ShellPage extends ConsumerWidget {
     final size = MediaQuery.sizeOf(context);
     return ResponsivePage(
       landscape: (context, ref) => Scaffold(
-        appBar: AppBar(title: Logo(), surfaceTintColor: Colors.transparent),
+        appBar: AppBar(title: Logo(), surfaceTintColor: Colors.transparent, actions: [DarkModeSwitch()],),
         body: Column(
           spacing: 10.0,
           children: [
@@ -25,7 +26,7 @@ class ShellPage extends ConsumerWidget {
         ),
       ),
       portrait: (context, ref) => Scaffold(
-        appBar: AppBar(title: Logo()),
+        appBar: AppBar(title: Logo(), actions: [DarkModeSwitch()],),
         body: child,
         bottomNavigationBar: BottomAppBar(child: RoutingBar()),
       ),
