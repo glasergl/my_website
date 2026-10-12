@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:my_website/page_routing/route_select_widget.dart';
 import 'package:my_website/pages/logo.dart';
 import 'package:my_website/pages/dark_mode_switch.dart';
-import 'package:my_website/page_routing/routing_bar.dart';
+import 'package:my_website/pages/shell_page.dart';
 
-class ShellPage extends ConsumerWidget {
-  const ShellPage({super.key, required this.child});
+class ShellPagePortrait extends ConsumerWidget {
+  const ShellPagePortrait({super.key, required this.child});
 
   final Widget child;
 
@@ -14,7 +15,16 @@ class ShellPage extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(title: Logo(), actions: [DarkModeSwitch()]),
       body: child,
-      bottomNavigationBar: BottomAppBar(child: RoutingBar()),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          mainAxisAlignment: .center,
+          spacing: 10.0,
+          children: List.generate(
+            ShellPage.routingDestinations.length,
+            (i) => RouteSelectWidget(ShellPage.routingDestinations[i]),
+          ),
+        ),
+      ),
     );
   }
 }
