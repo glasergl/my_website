@@ -4,5 +4,11 @@
     "pageLabelHome": "Home",
     "pageLabelCoding": "Coding",
     "pageLabelGaming": "Gaming",
-    "pageLabelSocials": "Socials"
+    "pageLabelSocials": "Socials",
+    "gamingMyGuildWars2Character": "My Guild Wars 2 Character",
+    "gamingMyLoLAccount": "My League of Legends Account",
+    "gamingMyCurrentRank": "My current Elo (October 2026)",
+    "gamingMyHighestRank": "My highest Elo (2023)",
+    "diamond": "Diamond",
+    "master": "Master"
 }

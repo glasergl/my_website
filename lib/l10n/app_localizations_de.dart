@@ -23,4 +23,22 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get pageLabelSocials => 'Soziales';
+
+  @override
+  String get gamingMyGuildWars2Character => 'Mein Guild Wars 2 Charakter';
+
+  @override
+  String get gamingMyLoLAccount => 'Mein League of Legends Konto';
+
+  @override
+  String get gamingMyCurrentRank => 'Mein aktueller Rang (Oktober 2026)';
+
+  @override
+  String get gamingMyHighestRank => 'Mein höchster Rang (2023)';
+
+  @override
+  String get diamond => 'Diamant';
+
+  @override
+  String get master => 'Meister';
 }

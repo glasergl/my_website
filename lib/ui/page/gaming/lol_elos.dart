@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:my_website/l10n/app_localizations.dart';
 import 'package:my_website/ui/page/common/responsive_page.dart';
 import 'package:my_website/ui/page/gaming/lol_elo.dart';
 
@@ -12,19 +13,19 @@ class LolElos extends ConsumerWidget {
       Column(
         children: [
           Text(
-            "Mein aktueller Rang (Oktober 2026)",
+            AppLocalizations.of(context)!.gamingMyCurrentRank,
             style: Theme.of(context).textTheme.bodyLarge,
           ),
-          LolElo("diamond.png", "Diamant 1"),
+          LolElo("diamond.png", "${AppLocalizations.of(context)!.diamond} 1"),
         ],
       ),
       Column(
         children: [
           Text(
-            "Mein höchster Rang (2023)",
+            AppLocalizations.of(context)!.gamingMyHighestRank,
             style: Theme.of(context).textTheme.bodyLarge,
           ),
-          LolElo("master.png", "Meister", lp: 128),
+          LolElo("master.png", AppLocalizations.of(context)!.master, lp: 128),
         ],
       ),
     ];

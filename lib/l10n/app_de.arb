@@ -9,5 +9,17 @@
     "pageLabelGaming": "Zocken",
     "@pageLabelGaming": {},
     "pageLabelSocials": "Soziales",
-    "@pageLabelSocials": {}
+    "@pageLabelSocials": {},
+    "gamingMyGuildWars2Character": "Mein Guild Wars 2 Charakter",
+    "@gamingMyGuildWars2Character": {},
+    "gamingMyLoLAccount": "Mein League of Legends Konto",
+    "@gamingMyLoLAccount": {},
+    "gamingMyCurrentRank": "Mein aktueller Rang (Oktober 2026)",
+    "@gamingMyCurrentRank": {},
+    "gamingMyHighestRank": "Mein höchster Rang (2023)",
+    "@gamingMyHighestRank": {},
+    "diamond": "Diamant",
+    "@diamond": {},
+    "master": "Meister",
+    "@master": {}
 }

@@ -127,6 +127,42 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Soziales'**
   String get pageLabelSocials;
+
+  /// No description provided for @gamingMyGuildWars2Character.
+  ///
+  /// In de, this message translates to:
+  /// **'Mein Guild Wars 2 Charakter'**
+  String get gamingMyGuildWars2Character;
+
+  /// No description provided for @gamingMyLoLAccount.
+  ///
+  /// In de, this message translates to:
+  /// **'Mein League of Legends Konto'**
+  String get gamingMyLoLAccount;
+
+  /// No description provided for @gamingMyCurrentRank.
+  ///
+  /// In de, this message translates to:
+  /// **'Mein aktueller Rang (Oktober 2026)'**
+  String get gamingMyCurrentRank;
+
+  /// No description provided for @gamingMyHighestRank.
+  ///
+  /// In de, this message translates to:
+  /// **'Mein höchster Rang (2023)'**
+  String get gamingMyHighestRank;
+
+  /// No description provided for @diamond.
+  ///
+  /// In de, this message translates to:
+  /// **'Diamant'**
+  String get diamond;
+
+  /// No description provided for @master.
+  ///
+  /// In de, this message translates to:
+  /// **'Meister'**
+  String get master;
 }
 
 class _AppLocalizationsDelegate

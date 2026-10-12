@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:my_website/l10n/app_localizations.dart';
 import 'package:my_website/ui/page/gaming/lol_account.dart';
 import 'package:my_website/ui/page/gaming/lol_elos.dart';
 
@@ -14,7 +15,7 @@ class LeagueOfLegends extends ConsumerWidget {
         Column(
           children: [
             Text(
-              "Mein League of Legends Konto",
+              AppLocalizations.of(context)!.gamingMyLoLAccount,
               style: Theme.of(context).textTheme.bodyLarge,
             ),
             LolAccount(

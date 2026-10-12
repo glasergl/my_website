@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:my_website/l10n/app_localizations.dart';
 
 class GuildWars2 extends ConsumerWidget {
   const GuildWars2({super.key});
@@ -10,7 +11,7 @@ class GuildWars2 extends ConsumerWidget {
       spacing: 7.0,
       children: [
         Text(
-          "Mein Guild Wars 2 Charakter",
+          AppLocalizations.of(context)!.gamingMyGuildWars2Character,
           style: Theme.of(context).textTheme.bodyLarge,
         ),
         ClipRRect(
