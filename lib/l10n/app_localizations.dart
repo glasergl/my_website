@@ -163,6 +163,12 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Meister'**
   String get master;
+
+  /// No description provided for @socialsMyFavouriteVideo.
+  ///
+  /// In de, this message translates to:
+  /// **'Mein Lieblingsvideo'**
+  String get socialsMyFavouriteVideo;
 }
 
 class _AppLocalizationsDelegate

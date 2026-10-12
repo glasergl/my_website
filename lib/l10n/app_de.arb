@@ -21,5 +21,7 @@
     "diamond": "Diamant",
     "@diamond": {},
     "master": "Meister",
-    "@master": {}
+    "@master": {},
+    "socialsMyFavouriteVideo": "Mein Lieblingsvideo",
+    "@socialsMyFavouriteVideo": {}
 }
