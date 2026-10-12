@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:my_website/l10n/app_localizations.dart';
+import 'package:my_website/ui/page/shell_page/locale_provider.dart';
 import 'package:my_website/ui/page/shell_page/use_dark_mode_provider.dart';
 import 'package:my_website/ui/page/gaming/gaming_page.dart';
 import 'package:my_website/ui/page/home/home_page.dart';
@@ -43,9 +44,11 @@ class MyWebsiteApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final locale = ref.watch(localeProvider);
     final useDarkMode = ref.watch(useDarkModeProvider);
     final colorScheme = useDarkMode ? ColorScheme.dark() : ColorScheme.light();
     return MaterialApp.router(
+      locale: locale,
       localizationsDelegates: const [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
