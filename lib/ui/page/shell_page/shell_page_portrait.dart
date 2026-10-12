@@ -16,7 +16,16 @@ class ShellPagePortrait extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: Logo(),
-        actions: [LocaleSelection(), DarkModeSwitch()],
+        actions: [
+          Container(
+            margin: EdgeInsets.fromLTRB(5, 0.0, 5, 0.0),
+            child: LocaleSelection(),
+          ),
+          Container(
+            margin: EdgeInsets.fromLTRB(5, 0.0, 5, 0.0),
+            child: DarkModeSwitch(),
+          ),
+        ],
       ),
       body: child,
       bottomNavigationBar: BottomAppBar(

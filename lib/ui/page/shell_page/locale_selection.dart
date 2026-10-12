@@ -9,10 +9,8 @@ class LocaleSelection extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return DropdownButton<Locale>(
       value: ref.watch(localeProvider) ?? const Locale('de', 'DE'),
-      icon: Container(
-        margin: EdgeInsets.fromLTRB(7.0, 0.0, 0.0, 0.0),
-        child: Icon(Icons.language),
-      ),
+      icon: Icon(Icons.language),
+      isDense: true,
       items: const [
         DropdownMenuItem(
           value: Locale('en', 'GB'),
