@@ -169,6 +169,24 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Mein Lieblingsvideo'**
   String get socialsMyFavouriteVideo;
+
+  /// No description provided for @codingCustomLoLSetupDescription.
+  ///
+  /// In de, this message translates to:
+  /// **'Java GUI Tool für League of Legends, um Runen sowie Gegenstände gegnerspezifisch abzuspeichern'**
+  String get codingCustomLoLSetupDescription;
+
+  /// No description provided for @codingJLatexDescription.
+  ///
+  /// In de, this message translates to:
+  /// **'Java Bibliothek, um LaTeX Code zu generieren, einen Compiler darauf auszuführen und die erstelle PDF Datei zu speichern'**
+  String get codingJLatexDescription;
+
+  /// No description provided for @codingTaskSchedulerDescription.
+  ///
+  /// In de, this message translates to:
+  /// **'Java GUI, um Kommandozeilen Befehle anhand eines Cronjobs auf Windows wiederholt ausführen zu lassen'**
+  String get codingTaskSchedulerDescription;
 }
 
 class _AppLocalizationsDelegate

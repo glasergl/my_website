@@ -23,5 +23,11 @@
     "master": "Meister",
     "@master": {},
     "socialsMyFavouriteVideo": "Mein Lieblingsvideo",
-    "@socialsMyFavouriteVideo": {}
+    "@socialsMyFavouriteVideo": {},
+    "codingCustomLoLSetupDescription": "Java GUI Tool für League of Legends, um Runen sowie Gegenstände gegnerspezifisch abzuspeichern",
+    "@codingCustomLoLSetupDescription": {},
+    "codingJLatexDescription": "Java Bibliothek, um LaTeX Code zu generieren, einen Compiler darauf auszuführen und die erstelle PDF Datei zu speichern",
+    "@codingJLatexDescription": {},
+    "codingTaskSchedulerDescription": "Java GUI, um Kommandozeilen Befehle anhand eines Cronjobs auf Windows wiederholt ausführen zu lassen",
+    "@codingTaskSchedulerDescription": {}
 }

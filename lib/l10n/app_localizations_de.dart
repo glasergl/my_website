@@ -44,4 +44,16 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get socialsMyFavouriteVideo => 'Mein Lieblingsvideo';
+
+  @override
+  String get codingCustomLoLSetupDescription =>
+      'Java GUI Tool für League of Legends, um Runen sowie Gegenstände gegnerspezifisch abzuspeichern';
+
+  @override
+  String get codingJLatexDescription =>
+      'Java Bibliothek, um LaTeX Code zu generieren, einen Compiler darauf auszuführen und die erstelle PDF Datei zu speichern';
+
+  @override
+  String get codingTaskSchedulerDescription =>
+      'Java GUI, um Kommandozeilen Befehle anhand eines Cronjobs auf Windows wiederholt ausführen zu lassen';
 }

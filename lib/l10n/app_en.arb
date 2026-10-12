@@ -11,5 +11,8 @@
     "gamingMyHighestRank": "My highest Elo (2023)",
     "diamond": "Diamond",
     "master": "Master",
-    "socialsMyFavouriteVideo": "Mein favourite Video"
+    "socialsMyFavouriteVideo": "Mein favourite Video",
+    "codingCustomLoLSetupDescription": "Java GUI tool for League of Legends to store runes and items depending per match-up",
+    "codingJLatexDescription": "Java library to generate LaTeX code, call a compiler on it and store the generated PDF file",
+    "codingTaskSchedulerDescription": "Java GUI to regularly run command line instructions according to a cronjob on Windows"
 }
