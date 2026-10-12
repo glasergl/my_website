@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_website/pages/socials/video.dart';
+import 'package:my_website/ui/page/socials/video.dart';
 
 class SocialsPage extends ConsumerWidget {
   const SocialsPage({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_website/pages/gaming/lol_account.dart';
-import 'package:my_website/pages/gaming/lol_elos.dart';
+import 'package:my_website/ui/page/gaming/lol_account.dart';
+import 'package:my_website/ui/page/gaming/lol_elos.dart';
 
 class LeagueOfLegends extends ConsumerWidget {
   const LeagueOfLegends({super.key});

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:my_website/pages/use_dark_mode_provider.dart';
-import 'package:my_website/pages/gaming/gaming_page.dart';
-import 'package:my_website/pages/home/home_page.dart';
-import 'package:my_website/pages/shell_page.dart';
-import 'package:my_website/pages/programming/programming_page.dart';
-import 'package:my_website/pages/socials/socials_page.dart';
+import 'package:my_website/ui/page/shell_page/use_dark_mode_provider.dart';
+import 'package:my_website/ui/page/gaming/gaming_page.dart';
+import 'package:my_website/ui/page/home/home_page.dart';
+import 'package:my_website/ui/page/shell_page/shell_page.dart';
+import 'package:my_website/ui/page/programming/programming_page.dart';
+import 'package:my_website/ui/page/socials/socials_page.dart';
 
 class MyWebsiteApp extends ConsumerWidget {
   static final GoRouter _router = GoRouter(

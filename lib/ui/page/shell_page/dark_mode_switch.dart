@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_website/pages/use_dark_mode_provider.dart';
+import 'package:my_website/ui/page/shell_page/use_dark_mode_provider.dart';
 
 class DarkModeSwitch extends ConsumerWidget {
   const DarkModeSwitch({super.key});

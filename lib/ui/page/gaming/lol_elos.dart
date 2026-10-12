@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_website/common/responsive_page.dart';
-import 'package:my_website/pages/gaming/lol_elo.dart';
+import 'package:my_website/ui/page/common/responsive_page.dart';
+import 'package:my_website/ui/page/gaming/lol_elo.dart';
 
 class LolElos extends ConsumerWidget {
   const LolElos({super.key});

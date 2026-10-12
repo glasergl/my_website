@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_website/pages/gaming/guild_wars_2.dart';
-import 'package:my_website/pages/gaming/league_of_legends.dart';
+import 'package:my_website/ui/page/gaming/guild_wars_2.dart';
+import 'package:my_website/ui/page/gaming/league_of_legends.dart';
 
 class GamingPage extends ConsumerWidget {
   const GamingPage({super.key});
