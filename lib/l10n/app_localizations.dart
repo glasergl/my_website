@@ -100,8 +100,8 @@ abstract class AppLocalizations {
 
   /// No description provided for @personCharacterization.
   ///
-  /// In en, this message translates to:
-  /// **'MSc. Computer Science • Coding • Gaming'**
+  /// In de, this message translates to:
+  /// **'MSc. Informatik • Programmieren • Zocken'**
   String get personCharacterization;
 }
 

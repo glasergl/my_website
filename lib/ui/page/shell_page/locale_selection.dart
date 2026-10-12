@@ -9,12 +9,26 @@ class LocaleSelection extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return DropdownButton<Locale>(
       value: ref.watch(localeProvider) ?? const Locale('de', 'DE'),
+      icon: Container(
+        margin: EdgeInsets.fromLTRB(7.0, 0.0, 0.0, 0.0),
+        child: Icon(Icons.language),
+      ),
       items: const [
-        DropdownMenuItem(value: Locale('en', 'GB'), child: Text('English')),
-        DropdownMenuItem(value: Locale('de', 'DE'), child: Text('Deutsch')),
+        DropdownMenuItem(
+          value: Locale('en', 'GB'),
+          alignment: Alignment.center,
+          child: Text('🇬🇧 English'),
+        ),
+        DropdownMenuItem(
+          value: Locale('de', 'DE'),
+          alignment: Alignment.center,
+          child: Text('🇩🇪 Deutsch'),
+        ),
       ],
       onChanged: (locale) =>
           ref.read(localeProvider.notifier).setLocale(locale),
+      underline: const SizedBox.shrink(),
+      focusColor: Colors.transparent,
     );
   }
 }
