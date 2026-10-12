@@ -11,4 +11,16 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get personCharacterization =>
       'MSc. Computer Science • Coding • Gaming';
+
+  @override
+  String get pageLabelHome => 'Home';
+
+  @override
+  String get pageLabelCoding => 'Coding';
+
+  @override
+  String get pageLabelGaming => 'Gaming';
+
+  @override
+  String get pageLabelSocials => 'Socials';
 }

@@ -1,4 +1,8 @@
 {
     "@@locale": "en",
-    "personCharacterization": "MSc. Computer Science • Coding • Gaming"
+    "personCharacterization": "MSc. Computer Science • Coding • Gaming",
+    "pageLabelHome": "Home",
+    "pageLabelCoding": "Coding",
+    "pageLabelGaming": "Gaming",
+    "pageLabelSocials": "Socials"
 }

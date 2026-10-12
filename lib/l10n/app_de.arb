@@ -1,5 +1,13 @@
 {
     "@@locale": "de",
     "personCharacterization": "MSc. Informatik • Programmieren • Zocken",
-    "@personCharacterization": {}
+    "@personCharacterization": {},
+    "pageLabelHome": "Startseite",
+    "@pageLabelHome": {},
+    "pageLabelCoding": "Programmieren",
+    "@pageLabelCoding": {},
+    "pageLabelGaming": "Zocken",
+    "@pageLabelGaming": {},
+    "pageLabelSocials": "Soziales",
+    "@pageLabelSocials": {}
 }

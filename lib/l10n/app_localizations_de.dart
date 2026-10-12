@@ -11,4 +11,16 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get personCharacterization =>
       'MSc. Informatik • Programmieren • Zocken';
+
+  @override
+  String get pageLabelHome => 'Startseite';
+
+  @override
+  String get pageLabelCoding => 'Programmieren';
+
+  @override
+  String get pageLabelGaming => 'Zocken';
+
+  @override
+  String get pageLabelSocials => 'Soziales';
 }

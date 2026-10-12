@@ -103,6 +103,30 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'MSc. Informatik • Programmieren • Zocken'**
   String get personCharacterization;
+
+  /// No description provided for @pageLabelHome.
+  ///
+  /// In de, this message translates to:
+  /// **'Startseite'**
+  String get pageLabelHome;
+
+  /// No description provided for @pageLabelCoding.
+  ///
+  /// In de, this message translates to:
+  /// **'Programmieren'**
+  String get pageLabelCoding;
+
+  /// No description provided for @pageLabelGaming.
+  ///
+  /// In de, this message translates to:
+  /// **'Zocken'**
+  String get pageLabelGaming;
+
+  /// No description provided for @pageLabelSocials.
+  ///
+  /// In de, this message translates to:
+  /// **'Soziales'**
+  String get pageLabelSocials;
 }
 
 class _AppLocalizationsDelegate
