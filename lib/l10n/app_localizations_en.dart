@@ -46,7 +46,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get master => 'Master';
 
   @override
-  String get socialsMyFavouriteVideo => 'Mein favourite Video';
+  String get socialsMyFavouriteVideo => 'My favourite Video';
 
   @override
   String get codingCustomLoLSetupDescription =>
