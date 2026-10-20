@@ -5,6 +5,7 @@ import 'package:my_website/ui/page/page_routing/routes.dart';
 import 'package:my_website/ui/page/shell_page/locale_selection.dart';
 import 'package:my_website/ui/page/shell_page/logo.dart';
 import 'package:my_website/ui/page/shell_page/dark_mode_switch.dart';
+import 'package:my_website/ui/page/shell_page/portrait_bottom_navigation_bar.dart';
 
 class ShellPagePortrait extends ConsumerWidget {
   const ShellPagePortrait({super.key, required this.child});
@@ -29,16 +30,7 @@ class ShellPagePortrait extends ConsumerWidget {
         ],
       ),
       body: child,
-      bottomNavigationBar: BottomAppBar(
-        child: Row(
-          mainAxisAlignment: .center,
-          spacing: 10.0,
-          children: List.generate(
-            routingDestinations.length,
-            (i) => RouteSelectWidget(routingDestinations[i]),
-          ),
-        ),
-      ),
+      bottomNavigationBar: PortraitBottomNavigationBar(routingDestinations),
     );
   }
 }
