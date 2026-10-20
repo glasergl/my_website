@@ -37,7 +37,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get gamingMyCurrentRank => 'Mein aktueller Rang (Oktober 2026)';
 
   @override
-  String get gamingMyHighestRank => 'Mein höchster Rang (2023)';
+  String get gamingMyHighestRank => 'Mein höchster Rang (2026)';
 
   @override
   String get diamond => 'Diamant';

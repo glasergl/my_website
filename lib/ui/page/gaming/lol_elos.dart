@@ -16,7 +16,7 @@ class LolElos extends ConsumerWidget {
             AppLocalizations.of(context)!.gamingMyCurrentRank,
             style: Theme.of(context).textTheme.bodyLarge,
           ),
-          LolElo("diamond.png", "${AppLocalizations.of(context)!.diamond} 1"),
+          LolElo("master.png", AppLocalizations.of(context)!.master, lp: 211),
         ],
       ),
       Column(
@@ -25,7 +25,7 @@ class LolElos extends ConsumerWidget {
             AppLocalizations.of(context)!.gamingMyHighestRank,
             style: Theme.of(context).textTheme.bodyLarge,
           ),
-          LolElo("master.png", AppLocalizations.of(context)!.master, lp: 128),
+          LolElo("master.png", AppLocalizations.of(context)!.master, lp: 241),
         ],
       ),
     ];
