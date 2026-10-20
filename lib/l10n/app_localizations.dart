@@ -98,6 +98,12 @@ abstract class AppLocalizations {
     Locale('en'),
   ];
 
+  /// No description provided for @selectLanguage.
+  ///
+  /// In de, this message translates to:
+  /// **'Sprache auswählen'**
+  String get selectLanguage;
+
   /// No description provided for @personCharacterization.
   ///
   /// In de, this message translates to:

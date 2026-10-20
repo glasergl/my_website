@@ -9,6 +9,9 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
+  String get selectLanguage => 'Select Language';
+
+  @override
   String get personCharacterization =>
       'MSc. Computer Science • Coding • Gaming';
 

@@ -9,6 +9,9 @@ class AppLocalizationsDe extends AppLocalizations {
   AppLocalizationsDe([String locale = 'de']) : super(locale);
 
   @override
+  String get selectLanguage => 'Sprache auswählen';
+
+  @override
   String get personCharacterization =>
       'MSc. Informatik • Programmieren • Zocken';
 

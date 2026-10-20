@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:my_website/l10n/app_localizations.dart';
 import 'package:my_website/ui/page/shell_page/locale_provider.dart';
 
 class LocaleSelection extends ConsumerWidget {
@@ -7,26 +8,33 @@ class LocaleSelection extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return DropdownButton<Locale>(
-      value: ref.watch(localeProvider) ?? const Locale('de', 'DE'),
-      icon: Icon(Icons.language),
-      isDense: true,
-      items: const [
-        DropdownMenuItem(
-          value: Locale('en', 'GB'),
-          alignment: Alignment.center,
-          child: Text('🇬🇧 English'),
-        ),
-        DropdownMenuItem(
-          value: Locale('de', 'DE'),
-          alignment: Alignment.center,
-          child: Text('🇩🇪 Deutsch'),
-        ),
-      ],
-      onChanged: (locale) =>
+    return PopupMenuButton<Locale>(
+      tooltip: AppLocalizations.of(context)!.selectLanguage,
+      icon: const Icon(Icons.language),
+      onSelected: (locale) =>
           ref.read(localeProvider.notifier).setLocale(locale),
-      underline: const SizedBox.shrink(),
-      focusColor: Colors.transparent,
+      itemBuilder: (context) => [
+        _localeItem(Locale('de'), '🇩🇪', 'Deutsch', context),
+        _localeItem(Locale('en'), '🇬🇧', 'English', context),
+      ],
+    );
+  }
+
+  PopupMenuItem<Locale> _localeItem(
+    Locale locale,
+    String flag,
+    String name,
+    BuildContext context,
+  ) {
+    return PopupMenuItem<Locale>(
+      value: locale,
+      child: Row(
+        children: [
+          Text(flag, style: Theme.of(context).textTheme.bodyLarge),
+          const SizedBox(width: 12),
+          Text(name),
+        ],
+      ),
     );
   }
 }
