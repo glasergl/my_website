@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:my_website/ui/page/page_routing/landscape_top_navigation_bar.dart';
 import 'package:my_website/ui/page/page_routing/route_select_widget.dart';
 import 'package:my_website/ui/page/page_routing/routes.dart';
 import 'package:my_website/ui/page/shell_page/locale_selection.dart';
@@ -17,25 +18,18 @@ class ShellPageLandscape extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: Logo(),
-        actions: [
-          ...List.generate(
-            routingDestinations.length,
-            (i) => Container(
-              margin: EdgeInsets.fromLTRB(5, 0.0, 5, 0.0),
-              child: RouteSelectWidget(routingDestinations[i]),
-            ),
-          ),
-          Container(
-            margin: EdgeInsets.fromLTRB(5, 0.0, 5, 0.0),
-            child: LocaleSelection(),
-          ),
-          Container(
-            margin: EdgeInsets.fromLTRB(5, 0.0, 5, 0.0),
-            child: DarkModeSwitch(),
-          ),
-        ],
+        actions: [LocaleSelection(), DarkModeSwitch()],
       ),
-      body: child,
+      body: SafeArea(
+        child: Column(
+          children: [
+            const SizedBox(height: 24),
+            LandscapeTopNavigationBar(routingDestinations),
+            const SizedBox(height: 24),
+            Expanded(child: child ?? Container()),
+          ],
+        ),
+      ),
     );
   }
 }

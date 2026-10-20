@@ -12,23 +12,12 @@ class RouteSelectWidget extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final bool selected =
         GoRouterState.of(context).uri.path == routingDestination.goRoute;
-    return Container(
-      color: selected ? Theme.of(context).focusColor : null,
-      child: TextButton.icon(
-        onPressed: () => context.go(routingDestination.goRoute),
-        icon: routingDestination.icon,
-        label: Text(routingDestination.destinationName),
-        style: ButtonStyle(
-          overlayColor: WidgetStateProperty.resolveWith<Color>((states) {
-            if (states.contains(WidgetState.hovered) && selected) {
-              return Colors.transparent;
-            } else if (states.contains(WidgetState.hovered)) {
-              return Theme.of(context).hoverColor;
-            } else {
-              return Colors.transparent;
-            }
-          }),
-        ),
+    return TextButton.icon(
+      onPressed: () => context.go(routingDestination.goRoute),
+      icon: routingDestination.icon,
+      label: Text(routingDestination.destinationName),
+      style: TextButton.styleFrom(
+        backgroundColor: selected ? Theme.of(context).focusColor : null,
       ),
     );
   }

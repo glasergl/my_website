@@ -4,7 +4,7 @@ import 'package:my_website/ui/page/page_routing/routes.dart';
 import 'package:my_website/ui/page/shell_page/locale_selection.dart';
 import 'package:my_website/ui/page/shell_page/logo.dart';
 import 'package:my_website/ui/page/shell_page/dark_mode_switch.dart';
-import 'package:my_website/ui/page/shell_page/portrait_bottom_navigation_bar.dart';
+import 'package:my_website/ui/page/page_routing/portrait_bottom_navigation_bar.dart';
 
 class ShellPagePortrait extends ConsumerWidget {
   const ShellPagePortrait({super.key, required this.child});
@@ -17,16 +17,7 @@ class ShellPagePortrait extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: Logo(),
-        actions: [
-          Container(
-            margin: EdgeInsets.fromLTRB(5, 0.0, 5, 0.0),
-            child: LocaleSelection(),
-          ),
-          Container(
-            margin: EdgeInsets.fromLTRB(5, 0.0, 5, 0.0),
-            child: DarkModeSwitch(),
-          ),
-        ],
+        actions: [LocaleSelection(), DarkModeSwitch()],
       ),
       body: child,
       bottomNavigationBar: PortraitBottomNavigationBar(routingDestinations),
