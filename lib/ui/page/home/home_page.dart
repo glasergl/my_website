@@ -9,7 +9,13 @@ class HomePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return SingleChildScrollView(
-      child: Column(children: [MyTitle(), MyDescription()]),
+      child: Column(
+        children: [
+          MyTitle(),
+          MyDescription(),
+          Image.asset('assets/images/gwen.png', width: 300.0),
+        ],
+      ),
     );
   }
 }

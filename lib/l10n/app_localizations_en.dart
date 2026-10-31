@@ -38,7 +38,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get gamingMyLoLAccount => 'My League of Legends Account';
 
   @override
-  String get gamingMyCurrentRank => 'My current Elo (October 2026)';
+  String get gamingMyCurrentRank => 'My current Elo (November 2026)';
 
   @override
   String get gamingMyHighestRank => 'My highest Elo (2026)';

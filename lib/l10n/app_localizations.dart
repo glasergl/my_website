@@ -155,7 +155,7 @@ abstract class AppLocalizations {
   /// No description provided for @gamingMyCurrentRank.
   ///
   /// In de, this message translates to:
-  /// **'Mein aktueller Rang (Oktober 2026)'**
+  /// **'Mein aktueller Rang (November 2026)'**
   String get gamingMyCurrentRank;
 
   /// No description provided for @gamingMyHighestRank.
