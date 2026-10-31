@@ -13,7 +13,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get personCharacterization =>
-      'MSc. Computer Science • Coding • Gaming';
+      'MSc. Computer Science Student • Coding • Gaming';
+
+  @override
+  String get welcomeMessage =>
+      'Welcome to my website that I use to share my interests and projects. Mainly I am interested in everything about computers, including programming, gaming, 2D/3D computergraphics and video editing. Furthermore, I enjoy cooking as counterbalance for all the digital hobbys.';
 
   @override
   String get pageLabelHome => 'Home';

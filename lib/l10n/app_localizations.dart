@@ -107,8 +107,14 @@ abstract class AppLocalizations {
   /// No description provided for @personCharacterization.
   ///
   /// In de, this message translates to:
-  /// **'MSc. Informatik • Programmieren • Zocken'**
+  /// **'MSc. Informatik Student • Programmieren • Zocken'**
   String get personCharacterization;
+
+  /// No description provided for @welcomeMessage.
+  ///
+  /// In de, this message translates to:
+  /// **'Willkommen auf meiner Website, die ich nutze, um meine Interessen und Projekte zu teilen. Hauptsächlich interessiere ich mich für alles rund um Computer. Insbesondere Programmieren, Zocken, 2D/3D Computergrafik und Videoschnitt. Als Ausgleich für die ganzen digitalen Hobbys koche ich gerne.'**
+  String get welcomeMessage;
 
   /// No description provided for @pageLabelHome.
   ///
@@ -179,7 +185,7 @@ abstract class AppLocalizations {
   /// No description provided for @codingCustomLoLSetupDescription.
   ///
   /// In de, this message translates to:
-  /// **'Java GUI Tool für League of Legends, um Runen sowie Gegenstände gegnerspezifisch abzuspeichern'**
+  /// **'Java Grafische Anwendung für League of Legends, um Runen sowie Gegenstände gegnerspezifisch abzuspeichern'**
   String get codingCustomLoLSetupDescription;
 
   /// No description provided for @codingJLatexDescription.
@@ -191,7 +197,7 @@ abstract class AppLocalizations {
   /// No description provided for @codingTaskSchedulerDescription.
   ///
   /// In de, this message translates to:
-  /// **'Java GUI, um Kommandozeilen Befehle anhand eines Cronjobs auf Windows wiederholt ausführen zu lassen'**
+  /// **'Java Grafische Anwendung, um Kommandozeilen Befehle anhand eines Cronjobs auf Windows wiederholt ausführen zu lassen'**
   String get codingTaskSchedulerDescription;
 }
 

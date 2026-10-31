@@ -13,7 +13,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get personCharacterization =>
-      'MSc. Informatik • Programmieren • Zocken';
+      'MSc. Informatik Student • Programmieren • Zocken';
+
+  @override
+  String get welcomeMessage =>
+      'Willkommen auf meiner Website, die ich nutze, um meine Interessen und Projekte zu teilen. Hauptsächlich interessiere ich mich für alles rund um Computer. Insbesondere Programmieren, Zocken, 2D/3D Computergrafik und Videoschnitt. Als Ausgleich für die ganzen digitalen Hobbys koche ich gerne.';
 
   @override
   String get pageLabelHome => 'Startseite';
@@ -50,7 +54,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get codingCustomLoLSetupDescription =>
-      'Java GUI Tool für League of Legends, um Runen sowie Gegenstände gegnerspezifisch abzuspeichern';
+      'Java Grafische Anwendung für League of Legends, um Runen sowie Gegenstände gegnerspezifisch abzuspeichern';
 
   @override
   String get codingJLatexDescription =>
@@ -58,5 +62,5 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get codingTaskSchedulerDescription =>
-      'Java GUI, um Kommandozeilen Befehle anhand eines Cronjobs auf Windows wiederholt ausführen zu lassen';
+      'Java Grafische Anwendung, um Kommandozeilen Befehle anhand eines Cronjobs auf Windows wiederholt ausführen zu lassen';
 }

@@ -1,7 +1,8 @@
 {
     "@@locale": "de",
     "selectLanguage": "Sprache auswählen",
-    "personCharacterization": "MSc. Informatik • Programmieren • Zocken",
+    "personCharacterization": "MSc. Informatik Student • Programmieren • Zocken",
+    "welcomeMessage": "Willkommen auf meiner Website, die ich nutze, um meine Interessen und Projekte zu teilen. Hauptsächlich interessiere ich mich für alles rund um Computer. Insbesondere Programmieren, Zocken, 2D/3D Computergrafik und Videoschnitt. Als Ausgleich für die ganzen digitalen Hobbys koche ich gerne.",
     "pageLabelHome": "Startseite",
     "pageLabelCoding": "Programmieren",
     "pageLabelGaming": "Zocken",
@@ -13,7 +14,7 @@
     "diamond": "Diamant",
     "master": "Meister",
     "socialsMyFavouriteVideo": "Mein Lieblingsvideo",
-    "codingCustomLoLSetupDescription": "Java GUI Tool für League of Legends, um Runen sowie Gegenstände gegnerspezifisch abzuspeichern",
+    "codingCustomLoLSetupDescription": "Java Grafische Anwendung für League of Legends, um Runen sowie Gegenstände gegnerspezifisch abzuspeichern",
     "codingJLatexDescription": "Java Bibliothek, um LaTeX Code zu generieren, einen Compiler darauf auszuführen und die erstelle PDF Datei zu speichern",
-    "codingTaskSchedulerDescription": "Java GUI, um Kommandozeilen Befehle anhand eines Cronjobs auf Windows wiederholt ausführen zu lassen"
+    "codingTaskSchedulerDescription": "Java Grafische Anwendung, um Kommandozeilen Befehle anhand eines Cronjobs auf Windows wiederholt ausführen zu lassen"
 }
