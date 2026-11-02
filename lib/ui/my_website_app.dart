@@ -15,23 +15,36 @@ class MyWebsiteApp extends ConsumerWidget {
   static final GoRouter _router = GoRouter(
     routes: [
       ShellRoute(
-        builder: (context, state, child) => ShellPage(child: child),
+        pageBuilder: (context, state, child) => NoTransitionPage<void>(
+          key: state.pageKey,
+          child: ShellPage(child: child),
+        ),
         routes: [
           GoRoute(
             path: '/',
-            builder: (context, state) => HomePage(),
+            pageBuilder: (context, state) =>
+                NoTransitionPage<void>(key: state.pageKey, child: HomePage()),
             routes: [
               GoRoute(
                 path: 'programming',
-                builder: (context, state) => ProgrammingPage(),
+                pageBuilder: (context, state) => NoTransitionPage<void>(
+                  key: state.pageKey,
+                  child: const ProgrammingPage(),
+                ),
               ),
               GoRoute(
                 path: 'gaming',
-                builder: (context, state) => GamingPage(),
+                pageBuilder: (context, state) => NoTransitionPage<void>(
+                  key: state.pageKey,
+                  child: GamingPage(),
+                ),
               ),
               GoRoute(
                 path: 'socials',
-                builder: (context, state) => SocialsPage(),
+                pageBuilder: (context, state) => NoTransitionPage<void>(
+                  key: state.pageKey,
+                  child: SocialsPage(),
+                ),
               ),
             ],
           ),
