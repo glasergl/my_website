@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:my_website/ui/page/page_routing/landscape_top_navigation_bar.dart';
 import 'package:my_website/ui/page/page_routing/routes.dart';
+import 'package:my_website/ui/page/shell_page/bottom_button_bar.dart';
 import 'package:my_website/ui/page/shell_page/locale_selection.dart';
 import 'package:my_website/ui/page/shell_page/logo.dart';
 import 'package:my_website/ui/page/shell_page/dark_mode_switch.dart';
@@ -26,6 +27,7 @@ class ShellPageLandscape extends ConsumerWidget {
             LandscapeTopNavigationBar(routingDestinations),
             const SizedBox(height: 24),
             Expanded(child: child ?? Container()),
+            BottomButtonBar(),
           ],
         ),
       ),

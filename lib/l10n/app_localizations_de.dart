@@ -12,6 +12,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get selectLanguage => 'Sprache auswählen';
 
   @override
+  String get imprint => 'Impressum';
+
+  @override
   String get personCharacterization =>
       'MSc. Informatik Student • Programmieren • Zocken';
 

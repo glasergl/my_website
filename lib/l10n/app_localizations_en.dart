@@ -12,6 +12,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get selectLanguage => 'Select Language';
 
   @override
+  String get imprint => 'Imprint';
+
+  @override
   String get personCharacterization =>
       'MSc. Computer Science Student • Coding • Gaming';
 

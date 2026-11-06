@@ -104,6 +104,12 @@ abstract class AppLocalizations {
   /// **'Sprache auswählen'**
   String get selectLanguage;
 
+  /// No description provided for @imprint.
+  ///
+  /// In de, this message translates to:
+  /// **'Impressum'**
+  String get imprint;
+
   /// No description provided for @personCharacterization.
   ///
   /// In de, this message translates to:

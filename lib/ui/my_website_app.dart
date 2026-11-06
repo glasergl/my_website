@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:my_website/l10n/app_localizations.dart';
+import 'package:my_website/ui/legal/imprint.dart';
 import 'package:my_website/ui/page/shell_page/locale_provider.dart';
 import 'package:my_website/ui/page/shell_page/use_dark_mode_provider.dart';
 import 'package:my_website/ui/page/gaming/gaming_page.dart';
@@ -44,6 +45,13 @@ class MyWebsiteApp extends ConsumerWidget {
                 pageBuilder: (context, state) => NoTransitionPage<void>(
                   key: state.pageKey,
                   child: SocialsPage(),
+                ),
+              ),
+              GoRoute(
+                path: 'imprint',
+                pageBuilder: (context, state) => NoTransitionPage<void>(
+                  key: state.pageKey,
+                  child: Imprint(),
                 ),
               ),
             ],

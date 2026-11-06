@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:my_website/ui/page/common/responsive_page.dart';
+import 'package:my_website/ui/common/responsive_page.dart';
 import 'package:my_website/ui/page/shell_page/shell_page_landscape.dart';
 import 'package:my_website/ui/page/shell_page/shell_page_portrait.dart';
 
