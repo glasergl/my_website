@@ -14,15 +14,25 @@ class LocaleSelection extends ConsumerWidget {
       onSelected: (locale) =>
           ref.read(localeProvider.notifier).setLocale(locale),
       itemBuilder: (context) => [
-        _localeItem(Locale('de'), '🇩🇪', 'Deutsch', context),
-        _localeItem(Locale('en'), '🇬🇧', 'English', context),
+        _localeItem(
+          Locale('de'),
+          'assets/images/germany_flag.png',
+          'Deutsch',
+          context,
+        ),
+        _localeItem(
+          Locale('en'),
+          'assets/images/great_britain_flag.png',
+          'English',
+          context,
+        ),
       ],
     );
   }
 
   PopupMenuItem<Locale> _localeItem(
     Locale locale,
-    String flag,
+    String flagAssertLocation,
     String name,
     BuildContext context,
   ) {
@@ -30,7 +40,7 @@ class LocaleSelection extends ConsumerWidget {
       value: locale,
       child: Row(
         children: [
-          Text(flag, style: Theme.of(context).textTheme.bodyLarge),
+          Image.asset(flagAssertLocation, width: 15.0),
           const SizedBox(width: 12),
           Text(name),
         ],
