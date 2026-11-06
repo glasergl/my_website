@@ -110,6 +110,12 @@ abstract class AppLocalizations {
   /// **'Impressum'**
   String get imprint;
 
+  /// No description provided for @privacy.
+  ///
+  /// In de, this message translates to:
+  /// **'Datenschutz'**
+  String get privacy;
+
   /// No description provided for @personCharacterization.
   ///
   /// In de, this message translates to:

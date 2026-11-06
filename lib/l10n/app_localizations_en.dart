@@ -15,6 +15,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get imprint => 'Imprint';
 
   @override
+  String get privacy => 'Privacy';
+
+  @override
   String get personCharacterization =>
       'MSc. Computer Science Student • Coding • Gaming';
 

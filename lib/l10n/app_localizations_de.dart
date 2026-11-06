@@ -15,6 +15,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get imprint => 'Impressum';
 
   @override
+  String get privacy => 'Datenschutz';
+
+  @override
   String get personCharacterization =>
       'MSc. Informatik Student • Programmieren • Zocken';
 
