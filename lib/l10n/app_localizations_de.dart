@@ -38,9 +38,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get gamingMyLoLAccount => 'Mein League of Legends Konto';
 
   @override
-  String get gamingMyCurrentRank => 'Mein aktueller Rang (November 2026)';
-
-  @override
   String get gamingMyHighestRank => 'Mein höchster Rang (2026)';
 
   @override
@@ -48,6 +45,12 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get master => 'Meister';
+
+  @override
+  String get grandmaster => 'Großmeister';
+
+  @override
+  String get challenger => 'Herausforderer';
 
   @override
   String get socialsMyFavouriteVideo => 'Mein Lieblingsvideo';

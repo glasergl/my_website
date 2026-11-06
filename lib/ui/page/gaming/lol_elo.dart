@@ -13,7 +13,7 @@ class LolElo extends ConsumerWidget {
     return Column(
       spacing: 3.0,
       children: [
-        Image.asset('assets/images/$eloImage', width: 250.0),
+        Image.asset('assets/images/$eloImage', width: 375.0),
         Text("$eloStr${lp != null ? " $lp LP" : ""}"),
       ],
     );

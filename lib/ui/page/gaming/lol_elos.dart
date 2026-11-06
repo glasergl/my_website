@@ -13,15 +13,6 @@ class LolElos extends ConsumerWidget {
       Column(
         children: [
           Text(
-            AppLocalizations.of(context)!.gamingMyCurrentRank,
-            style: Theme.of(context).textTheme.bodyLarge,
-          ),
-          LolElo("master.png", AppLocalizations.of(context)!.master, lp: 331),
-        ],
-      ),
-      Column(
-        children: [
-          Text(
             AppLocalizations.of(context)!.gamingMyHighestRank,
             style: Theme.of(context).textTheme.bodyLarge,
           ),

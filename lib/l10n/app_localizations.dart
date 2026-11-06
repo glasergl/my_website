@@ -152,12 +152,6 @@ abstract class AppLocalizations {
   /// **'Mein League of Legends Konto'**
   String get gamingMyLoLAccount;
 
-  /// No description provided for @gamingMyCurrentRank.
-  ///
-  /// In de, this message translates to:
-  /// **'Mein aktueller Rang (November 2026)'**
-  String get gamingMyCurrentRank;
-
   /// No description provided for @gamingMyHighestRank.
   ///
   /// In de, this message translates to:
@@ -175,6 +169,18 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Meister'**
   String get master;
+
+  /// No description provided for @grandmaster.
+  ///
+  /// In de, this message translates to:
+  /// **'Großmeister'**
+  String get grandmaster;
+
+  /// No description provided for @challenger.
+  ///
+  /// In de, this message translates to:
+  /// **'Herausforderer'**
+  String get challenger;
 
   /// No description provided for @socialsMyFavouriteVideo.
   ///
