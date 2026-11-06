@@ -1,12 +1,14 @@
 # Impressum
 
-### Herausgeber und Betreiber des Internetangebots
+---
+
+## Herausgeber und Betreiber des Internetangebots
 
 Gabriel Glaser
 
 E-Mail: mail@gabrielglaser.net
 
-### Haftungsausschluss
+## Haftungsausschluss
 
 Alle Angaben und Inhalte dieses Angebotes wurden sorgfältig erstellt und geprüft.
 Ich bemühe mich, das Angebot aktuell, vollständig und frei von inhaltlichen Fehlern anzubieten.

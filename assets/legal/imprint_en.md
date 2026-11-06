@@ -1,12 +1,14 @@
 # Imprint
 
-### Publisher and Maintainer of this Website
+---
+
+## Publisher and Maintainer of this Website
 
 Gabriel Glaser
 
 E-Mail: mail@gabrielglaser.net
 
-### Disclaimer
+## Disclaimer
 
 All information and content on this website have been carefully prepared and reviewed.
 I make every effort to ensure that the information provided is up-to-date, complete, and free of errors.
