@@ -4,5 +4,7 @@ import 'package:my_website/ui/page/shell_page/locale_provider.dart';
 
 final imprintProvider = FutureProvider((ref) async {
   final locale = ref.watch(localeProvider);
-  return rootBundle.loadString('legal/imprint_${locale.languageCode}.md');
+  return rootBundle.loadString(
+    'assets/legal/imprint_${locale.languageCode}.md',
+  );
 });

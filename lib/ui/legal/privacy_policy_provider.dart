@@ -4,5 +4,7 @@ import 'package:my_website/ui/page/shell_page/locale_provider.dart';
 
 final privacyPolicyProvider = FutureProvider((ref) async {
   final locale = ref.watch(localeProvider);
-  return rootBundle.loadString('legal/privacy_${locale.languageCode}.md');
+  return rootBundle.loadString(
+    'assets/legal/privacy_${locale.languageCode}.md',
+  );
 });
