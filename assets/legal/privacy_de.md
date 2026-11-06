@@ -8,6 +8,7 @@ Ich habe keinen Einfluss darauf, dass diese Anbieter die gesetzlichen Datenschut
 ### Verantwortlicher und Datenschutzbeauftragter
 
 Gabriel Glaser
+
 E-Mail: mail@gabrielglaser.net
 
 ### Datenverarbeitung beim Besuch dieser Internetseite

@@ -8,6 +8,7 @@ I have no control over whether these providers comply with applicable data prote
 ### Data Controller and Data Protection Officer
 
 Gabriel Glaser
+
 E-Mail: mail@gabrielglaser.net
 
 ### Data Processing When Visiting This Website
