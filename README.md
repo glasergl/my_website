@@ -1,3 +1,3 @@
 # My Website
 
-Live at [https://gabrielglaser.de/](https://gabrielglaser.de/)
+Live at [https://gabrielglaser.net/](https://gabrielglaser.net/)
