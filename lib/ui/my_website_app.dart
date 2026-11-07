@@ -24,42 +24,44 @@ class MyWebsiteApp extends ConsumerWidget {
         routes: [
           GoRoute(
             path: '/',
-            pageBuilder: (context, state) =>
-                NoTransitionPage<void>(key: state.pageKey, child: HomePage()),
+            pageBuilder: (context, state) => NoTransitionPage<void>(
+              key: state.pageKey,
+              child: SelectionArea(child: HomePage()),
+            ),
             routes: [
               GoRoute(
                 path: 'programming',
                 pageBuilder: (context, state) => NoTransitionPage<void>(
                   key: state.pageKey,
-                  child: const ProgrammingPage(),
+                  child: SelectionArea(child: const ProgrammingPage()),
                 ),
               ),
               GoRoute(
                 path: 'gaming',
                 pageBuilder: (context, state) => NoTransitionPage<void>(
                   key: state.pageKey,
-                  child: GamingPage(),
+                  child: SelectionArea(child: GamingPage()),
                 ),
               ),
               GoRoute(
                 path: 'socials',
                 pageBuilder: (context, state) => NoTransitionPage<void>(
                   key: state.pageKey,
-                  child: SocialsPage(),
+                  child: SelectionArea(child: SocialsPage()),
                 ),
               ),
               GoRoute(
                 path: 'imprint',
                 pageBuilder: (context, state) => NoTransitionPage<void>(
                   key: state.pageKey,
-                  child: Imprint(),
+                  child: SelectionArea(child: Imprint()),
                 ),
               ),
               GoRoute(
                 path: 'privacy',
                 pageBuilder: (context, state) => NoTransitionPage<void>(
                   key: state.pageKey,
-                  child: PrivacyPolicy(),
+                  child: SelectionArea(child: PrivacyPolicy()),
                 ),
               ),
             ],
