@@ -12,7 +12,7 @@ class PrivacyPolicy extends ConsumerWidget {
     return asyncPrivacy.when(
       data: (privacy) => Markdown(data: privacy),
       error: (o, err) => Container(),
-      loading: () => CircularProgressIndicator(),
+      loading: () => Center(child: CircularProgressIndicator()),
     );
   }
 }

@@ -12,7 +12,7 @@ class Imprint extends ConsumerWidget {
     return asyncImprint.when(
       data: (imprint) => Markdown(data: imprint),
       error: (o, err) => Container(),
-      loading: () => CircularProgressIndicator(),
+      loading: () => Center(child: CircularProgressIndicator()),
     );
   }
 }
