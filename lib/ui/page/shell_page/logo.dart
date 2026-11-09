@@ -7,9 +7,12 @@ class Logo extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return GestureDetector(
-      onTap: () => context.go("/"),
-      child: Text("GG", style: Theme.of(context).textTheme.headlineLarge),
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTap: () => context.go("/"),
+        child: Text("GG", style: Theme.of(context).textTheme.headlineLarge),
+      ),
     );
   }
 }
