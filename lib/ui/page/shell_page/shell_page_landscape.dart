@@ -27,7 +27,10 @@ class ShellPageLandscape extends ConsumerWidget {
             LandscapeTopNavigationBar(routingDestinations),
             const SizedBox(height: 24),
             Expanded(child: child ?? Container()),
-            BottomButtonBar(),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 10.0, 0, 0),
+              child: BottomButtonBar(),
+            ),
           ],
         ),
       ),

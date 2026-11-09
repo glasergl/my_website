@@ -23,7 +23,10 @@ class ShellPagePortrait extends ConsumerWidget {
       body: Column(
         children: [
           Expanded(child: child),
-          BottomButtonBar(),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 10.0, 0, 0),
+            child: BottomButtonBar(),
+          ),
         ],
       ),
       bottomNavigationBar: PortraitBottomNavigationBar(routingDestinations),

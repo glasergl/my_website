@@ -8,15 +8,17 @@ class GuildWars2 extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Column(
-      spacing: 7.0,
       children: [
         Text(
           AppLocalizations.of(context)!.gamingMyGuildWars2Character,
           style: Theme.of(context).textTheme.bodyLarge,
         ),
-        ClipRRect(
-          borderRadius: BorderRadius.circular(12),
-          child: Image.asset('assets/images/karl_the_rock.png', width: 500.0),
+        Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(12),
+            child: Image.asset('assets/images/karl_the_rock.png', width: 500.0),
+          ),
         ),
       ],
     );

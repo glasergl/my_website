@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:my_website/l10n/app_localizations.dart';
 import 'package:my_website/ui/page/gaming/lol_account.dart';
-import 'package:my_website/ui/page/gaming/lol_elos.dart';
+import 'package:my_website/ui/page/gaming/lol_elo.dart';
 
 class LeagueOfLegends extends ConsumerWidget {
   const LeagueOfLegends({super.key});
@@ -10,7 +10,6 @@ class LeagueOfLegends extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Column(
-      spacing: 30.0,
       children: [
         Column(
           children: [
@@ -24,7 +23,12 @@ class LeagueOfLegends extends ConsumerWidget {
             ),
           ],
         ),
-        LolElos(),
+        Column(
+          children: [
+            Text(AppLocalizations.of(context)!.gamingMyHighestRank),
+            LolElo("master.png", AppLocalizations.of(context)!.master, lp: 421),
+          ],
+        ),
       ],
     );
   }

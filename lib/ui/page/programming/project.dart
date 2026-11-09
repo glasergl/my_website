@@ -11,7 +11,6 @@ class Project extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Column(
-      spacing: 4.0,
       children: [
         Text(title, style: Theme.of(context).textTheme.bodyLarge),
         SizedBox(width: 200.0, child: Text(description, textAlign: .center)),

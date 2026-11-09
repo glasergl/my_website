@@ -9,11 +9,9 @@ class GamingPage extends ConsumerWidget {
   @override
   Widget build(Object context, WidgetRef ref) {
     return SingleChildScrollView(
-      child: Column(
-        children: [
-          Padding(padding: const EdgeInsets.all(20.0), child: GuildWars2()),
-          LeagueOfLegends(),
-        ],
+      child: Wrap(
+        alignment: .center,
+        children: [GuildWars2(), LeagueOfLegends()],
       ),
     );
   }

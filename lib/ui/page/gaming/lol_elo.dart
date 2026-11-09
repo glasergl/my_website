@@ -11,9 +11,11 @@ class LolElo extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Column(
-      spacing: 3.0,
       children: [
-        Image.asset('assets/images/$eloImage', width: 375.0),
+        Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Image.asset('assets/images/$eloImage', width: 300.0),
+        ),
         Text("$eloStr${lp != null ? " $lp LP" : ""}"),
       ],
     );
