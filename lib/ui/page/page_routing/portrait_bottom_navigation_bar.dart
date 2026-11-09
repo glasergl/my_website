@@ -16,6 +16,7 @@ class PortraitBottomNavigationBar extends ConsumerWidget {
     );
 
     return BottomNavigationBar(
+      selectedItemColor: Theme.of(context).colorScheme.primary,
       currentIndex: selectedIndex < 0 ? 0 : selectedIndex,
       type: BottomNavigationBarType.fixed,
       items: destinations.map((destination) {
